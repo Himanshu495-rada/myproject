@@ -66,6 +66,7 @@ def search():
     wordcloud = WordCloud().generate(text)
     plt.figure() 
     plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
     plt.savefig("//home//ubuntu//myproject//static//wordcloud.png")
     return jsonify({"success":True,"tweets":t})
 
