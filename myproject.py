@@ -69,4 +69,4 @@ def search():
     plt.savefig("C:\\Users\\himan\\Desktop\\Twitter_Flask_app\\static\\wordcloud.png")
     return jsonify({"success":True,"tweets":t})
 
-app.run(debug=True)
+app.run(host=0.0.0.0, debug=True)
