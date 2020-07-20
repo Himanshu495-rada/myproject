@@ -62,11 +62,11 @@ def search():
 
     values.append([v_p, pos, neu, neg, v_n])
     plt.pie(values, explode=(0,0,0,0.1,0.2), labels = names, colors = colors, autopct= '%1.1f%%',shadow=True, startangle=90)
-    plt.savefig("C:\\Users\\himan\\Desktop\\Twitter_Flask_app\\static\\pie_chart.png")
+    plt.savefig("//home//ubuntu//myproject//static//pie_chart.png")
     wordcloud = WordCloud().generate(text)
     plt.figure() 
     plt.imshow(wordcloud, interpolation='bilinear')
-    plt.savefig("C:\\Users\\himan\\Desktop\\Twitter_Flask_app\\static\\wordcloud.png")
+    plt.savefig("//home//ubuntu//myproject//static//wordcloud.png")
     return jsonify({"success":True,"tweets":t})
 
 app.run(host=0.0.0.0, debug=True)
