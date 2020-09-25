@@ -70,4 +70,4 @@ def search():
     plt.savefig("//home//ubuntu//myproject//static//wordcloud.png")
     return jsonify({"success":True,"tweets":t})
 
-app.run(host=0.0.0.0, debug=True)
+app.run()
